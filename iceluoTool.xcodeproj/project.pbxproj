@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C26E38FD2ACA035BF1B8F63B /* libPods-iceluoTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F30F3AA26DD492DFC1EB2DB /* libPods-iceluoTool.a */; };
 		C7523AC71E344F1700680283 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7523AC61E344F1700680283 /* main.m */; };
 		C7523ACA1E344F1700680283 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7523AC91E344F1700680283 /* AppDelegate.m */; };
 		C7523ACD1E344F1700680283 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7523ACC1E344F1700680283 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097E76B9DFA57A5B06DEF452 /* Pods-iceluoTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iceluoTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-iceluoTool/Pods-iceluoTool.release.xcconfig"; sourceTree = "<group>"; };
+		213004F41C10A6D32200D07A /* Pods-iceluoTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iceluoTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iceluoTool/Pods-iceluoTool.debug.xcconfig"; sourceTree = "<group>"; };
+		2F30F3AA26DD492DFC1EB2DB /* libPods-iceluoTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iceluoTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7523AC21E344F1700680283 /* iceluoTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iceluoTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7523AC61E344F1700680283 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7523AC81E344F1700680283 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26E38FD2ACA035BF1B8F63B /* libPods-iceluoTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D053718EC309D12EF859DBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F30F3AA26DD492DFC1EB2DB /* libPods-iceluoTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE12E4BC99502C5E6C1E8A5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				213004F41C10A6D32200D07A /* Pods-iceluoTool.debug.xcconfig */,
+				097E76B9DFA57A5B06DEF452 /* Pods-iceluoTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7523AB91E344F1700680283 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				C7523ADE1E344F1700680283 /* iceluoToolTests */,
 				C7523AE91E344F1700680283 /* iceluoToolUITests */,
 				C7523AC31E344F1700680283 /* Products */,
+				AE12E4BC99502C5E6C1E8A5D /* Pods */,
+				4D053718EC309D12EF859DBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7523AEF1E344F1700680283 /* Build configuration list for PBXNativeTarget "iceluoTool" */;
 			buildPhases = (
+				82C05676B20D17E8F7E31AC9 /* [CP] Check Pods Manifest.lock */,
 				C7523ABE1E344F1700680283 /* Sources */,
 				C7523ABF1E344F1700680283 /* Frameworks */,
 				C7523AC01E344F1700680283 /* Resources */,
+				50180E5A45D61F4E6FF81789 /* [CP] Embed Pods Frameworks */,
+				9DA63EF7503D15B3EAEF7E7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50180E5A45D61F4E6FF81789 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iceluoTool/Pods-iceluoTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82C05676B20D17E8F7E31AC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA63EF7503D15B3EAEF7E7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iceluoTool/Pods-iceluoTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7523ABE1E344F1700680283 /* Sources */ = {
@@ -422,6 +497,7 @@
 		};
 		C7523AF01E344F1700680283 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213004F41C10A6D32200D07A /* Pods-iceluoTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iceluoTool/Info.plist;
@@ -433,6 +509,7 @@
 		};
 		C7523AF11E344F1700680283 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097E76B9DFA57A5B06DEF452 /* Pods-iceluoTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iceluoTool/Info.plist;
