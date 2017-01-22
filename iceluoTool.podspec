@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'iceluoPod'
+  s.name             = 'iceluoTool'
   s.version          = '0.1.0'
   s.summary          = 'good good good good good good .'
 
